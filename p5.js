@@ -13,9 +13,18 @@ const fs=require('fs');
 //     const data="hg8f86";
 //     fs.writeFileSync("./data.txt",data);
 // }
-const write=()=>{
-    const data="hg86";
-    fs.writeFile("./data.txt",data,"utf-8",(err)=>{
+// const write=()=>{
+//     const data="hg86";
+//     fs.writeFile("./data.txt",data,"utf-8",(err)=>{
+//         if(err)
+//             console.log(err)
+//         else
+//             console.log("writen")
+//     });
+// }
+const append=()=>{
+    const data="ndsaifjasdfo";
+    fs.appendFile("./data.txt",data,"utf-8",(err)=>{
         if(err)
             console.log(err)
         else
@@ -23,6 +32,7 @@ const write=()=>{
     });
 }
 console.log("after reading")
-write();
+// write();
+append();
 // read();
 console.log("before reading")
