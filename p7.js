@@ -14,3 +14,10 @@ fs.unlink("./mydir/data.txt",(err)=>{
     else
         console.log('file deleted')
 })
+
+fs.rmdir("mydir",(err)=>{
+    if(err)
+        console.log(err)
+    else
+        console.log('file deleted')
+})
